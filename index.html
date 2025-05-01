@@ -14,7 +14,7 @@
    <section class="header">
     <nav>
         <a href="index.html"><img src="logo-black.png" alt="course"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hidemenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
@@ -31,7 +31,45 @@
         <p>Making website is one of the easiest thing in the world.You just need to learn HTML, CSS,<br> Javascript and you are good to go.</p>
         <a href="" class="btn">visit us to know more</a>
     </div>
-    
    </section> 
+<!-----course----->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Kickstart your coding journey with fun lessons designed for beginners. Learn the basics and build confidence!</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Beginner Course</h3>
+            <p>Jumpstart your web design journey! Learn the basics with fun lessons and hands-on projects tailored for you.</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermediate Course</h3>
+            <p>Build on your skills! Dive deeper with advanced techniques and real-world challenges to enhance your design.</p>
+        </div>
+        <div class="course-col">
+            <h3>Advanced Course</h3>
+            <p>Master web design! Tackle complex projects and learn industry secrets from expert instructors.</p>
+        </div>
+
+
+</section>
+
+
+
+
+
+
+<!------javascript for menu ------>
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showmenu(){
+        navLinks.style.right = "0";
+    }
+    function hidemenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
 </body>
 </html>
